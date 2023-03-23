@@ -72,7 +72,7 @@
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:ems="10"
-        android:hint="First Name"
+        android:hint="Student ID"
         android:inputType="textEmailAddress"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="@+id/tv_managestudent"
