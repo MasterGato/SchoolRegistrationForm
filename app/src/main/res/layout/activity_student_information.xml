@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentInformation">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Student Name"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bday"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Birthdate (Age)"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_student_id" />
+
+    <TextView
+        android:id="@+id/tv_course"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Student Course"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/tv_gender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Gender"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Course"
+        app:layout_constraintEnd_toEndOf="@+id/tv_bday"
+        app:layout_constraintStart_toStartOf="@+id/tv_bday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bday" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Gender"
+        app:layout_constraintEnd_toEndOf="@+id/tv_bday"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_bday"
+        app:layout_constraintTop_toBottomOf="@+id/tv_course" />
+
+    <TextView
+        android:id="@+id/tv_student_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

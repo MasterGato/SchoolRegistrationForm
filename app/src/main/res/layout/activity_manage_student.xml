@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".manage_student">
+
+    <Button
+        android:id="@+id/btn_Back"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Back to Menu"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Search"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_Search"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Search" />
+
+    <Button
+        android:id="@+id/btn_Search"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Cancel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_Cancel"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Cancel" />
+
+    <Button
+        android:id="@+id/btn_Cancel"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Update"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_Update"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Update" />
+
+    <TextView
+        android:id="@+id/tv_managestudent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Manage Student"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_mngFname"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_managestudent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_managestudent"
+        app:layout_constraintTop_toBottomOf="@+id/et_stu_id" />
+
+    <EditText
+        android:id="@+id/et_stu_id"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_managestudent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_managestudent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_managestudent" />
+
+    <EditText
+        android:id="@+id/et_mngMname"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Middle Name"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_mngFname"
+        app:layout_constraintStart_toStartOf="@+id/et_mngFname"
+        app:layout_constraintTop_toBottomOf="@+id/et_mngFname" />
+
+    <EditText
+        android:id="@+id/et_mngLname"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_mngMname"
+        app:layout_constraintStart_toStartOf="@+id/et_mngMname"
+        app:layout_constraintTop_toBottomOf="@+id/et_mngMname" />
+
+    <EditText
+        android:id="@+id/et_mngCourse"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Course"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_mngLname"
+        app:layout_constraintStart_toStartOf="@+id/et_mngLname"
+        app:layout_constraintTop_toBottomOf="@+id/et_mngLname" />
+
+    <Button
+        android:id="@+id/btn_Update"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Update"
+        app:layout_constraintEnd_toEndOf="@+id/et_mngCourse"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_mngCourse"
+        app:layout_constraintTop_toBottomOf="@+id/et_mngCourse" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

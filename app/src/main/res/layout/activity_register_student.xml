@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterStudent">
+
+    <EditText
+        android:id="@+id/et_StdBirthdate"
+        android:layout_width="262dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Birthdate"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/et_StdMiddlename2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_StdMiddlename2"
+        app:layout_constraintTop_toBottomOf="@+id/et_StdMiddlename2" />
+
+    <EditText
+        android:id="@+id/et_StdMiddlename2"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Middle Name (if any)"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_StdFirstname"
+        app:layout_constraintTop_toBottomOf="@+id/et_StdFirstname" />
+
+    <EditText
+        android:id="@+id/et_StdFirstname"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_StdLastname"
+        app:layout_constraintTop_toBottomOf="@+id/et_StdLastname" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="Register Student"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_StdLastname"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+    <Button
+        android:id="@+id/btn_Date"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="16dp"
+        android:text="Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toEndOf="@+id/et_StdBirthdate"
+        app:layout_constraintTop_toBottomOf="@+id/et_StdMiddlename2" />
+
+    <Button
+        android:id="@+id/btn_stdRegSubmit"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="@+id/et_course"
+        app:layout_constraintStart_toStartOf="@+id/et_course"
+        app:layout_constraintTop_toBottomOf="@+id/et_course" />
+
+    <RadioGroup
+        android:id="@+id/rb_gender"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/et_StdBirthdate"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/et_StdBirthdate"
+        app:layout_constraintTop_toBottomOf="@+id/et_StdBirthdate">
+
+        <RadioButton
+            android:id="@+id/rb_male"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/rb_female"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:text="Female" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/et_course"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Course"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_Date"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/rb_gender"
+        app:layout_constraintTop_toBottomOf="@+id/rb_gender" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
