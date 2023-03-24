@@ -26,7 +26,7 @@ public class Dashboard extends AppCompatActivity {
 
         cvManage = findViewById(R.id.cv_manage);
         cvManage.setOnClickListener(e -> {
-            Intent intent = new Intent(this, manage_student.class);
+            Intent intent = new Intent(this, ManageStudent.class);
             startActivity(intent);
         });
 

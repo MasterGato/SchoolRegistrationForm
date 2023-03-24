@@ -8,19 +8,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.schoolregistrationform.database.Instance;
 import com.example.schoolregistrationform.database.Table;
 import com.example.schoolregistrationform.models.Student;
-import com.example.schoolregistrationform.utils.Fields;
-import com.example.schoolregistrationform.utils.Toaster;
 
 import java.time.LocalDate;
 
-public class manage_student extends AppCompatActivity {
+public class ManageStudent extends AppCompatActivity {
 
     private EditText et_fname, et_mname, et_lname, et_course, etId;
     private Button btn_update, btn_cancel, btn_search, btn_back;

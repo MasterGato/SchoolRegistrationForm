@@ -26,7 +26,7 @@
             android:name=".SearchStudent"
             android:exported="false" />
         <activity
-            android:name=".manage_student"
+            android:name=".ManageStudent"
             android:exported="false" />
         <activity
             android:name=".StudentRecords"
